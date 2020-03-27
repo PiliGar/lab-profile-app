@@ -6,9 +6,15 @@ const router = express.Router();
 
 // REGISTER A USER
 router.post("/signup", async (req, res, next) => {
-  const { username, password } = req.body;
+  const { username, password, campus, course, image } = req.body;
   // Create the user
-  const newUser = await UserModel.create({ username, password });
+  const newUser = await UserModel.create({
+    username,
+    password,
+    campus,
+    course,
+    image
+  });
 
   // Directly login user
   req.logIn(newUser, err => {
