@@ -15,14 +15,33 @@ body {
 h1 {
   font-size: 5.5rem;
   font-weight: bold;
+  color: #638165;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-weight: normal;
   padding-right: 15rem;
   line-height: 4.7rem;
+  color: #282d30;
+}
+h3 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 4.7rem;
+  color: #282d30;
+}
+h4 {
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 4.7rem;
+  color: #282d30;
+}
+p {
+  color: #282d30;
 }
 p,
-a {
+a,
+label {
   font-size: 1.8rem;
+  line-height: 3rem;
 }
